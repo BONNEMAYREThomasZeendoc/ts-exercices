@@ -1,22 +1,46 @@
 // Typer les objets suivants
 
-const users = {
-  "48f2f7d6-00bc-4d13-9fb3-4e1ca0ca93ec": {
-    firstName: "Wava",
-    lastName: "D'Amore",
-    accountChecked: true,
-  },
-  "9b98f02e-1bcb-4a2e-b908-7829616eb6de": {
-    firstName: "Kailee",
-    lastName: "Jones",
-    accountChecked: false,
-  },
-  "0efdccb1-d5d9-4f69-aa77-8aec3a5e1e2b": {
+const user = {
     firstName: "Beverly",
-    lastName: "D'Amore",
+    lastName: "Davis",
     accountChecked: false,
-  },
+    address: {
+        city: 'Paris',
+        country: 'France',
+    },
+    orders: [
+        {
+            item: [
+                {id: 67231, quantity: 1}, 
+                {id: 62913, quantity: 3},
+            ],
+            shippingAddress: {
+                city: 'Toulon',
+                country: 'France',
+            },
+            paymentAddress: {
+                city: 'Tokyo',
+                country: 'Japan',
+            }
+        },
+        {
+            item: [
+                {id: 41984, quantity: 2}, 
+                {id: 63426, quantity: 1},
+                {id: 32654, quantity: 10},
+            ],
+            shippingAddress: {
+                city: 'Nice',
+                country: 'France',
+            },
+            paymentAddress: {
+                city: 'Las Vegas',
+                country: 'US',
+            }
+        },
+    ]
 }
 
 export default function ex1() {}
+
 

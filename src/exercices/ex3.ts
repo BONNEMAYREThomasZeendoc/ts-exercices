@@ -30,7 +30,7 @@ const tree = {
 // Faire en sorte que la fonction renvoi une chaine comme suit :
 //      "what[do[hi,ho],you[world,do[today,well[:)]]],?[]]"
 
-function treeConcat(tree : any) {
+function treeConcat(tree : unknown) {
     return '';
 }
 
