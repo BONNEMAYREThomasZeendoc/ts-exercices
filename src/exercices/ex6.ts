@@ -12,8 +12,8 @@ const empty :any[] = [];
 
 
 function getSecond(genTab : any[]) : any {
-    if(genTab[2] !== undefined){
-        return genTab[2];
+    if(genTab[1] !== undefined){
+        return genTab[1];
     }
     return null;
 }
