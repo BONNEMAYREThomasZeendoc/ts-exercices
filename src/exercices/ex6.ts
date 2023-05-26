@@ -11,12 +11,12 @@ const computerUnit : string[] = ['o', 'Ko', 'Mo', 'Go', 'To', 'Po'];
 const empty :any[] = [];
 
 
-function getSecond(genTab : any[]) : any {
-    if(genTab[1] !== undefined){
-        return genTab[1];
-    }
-    return null;
+function getSecond<T>(genTab : T[]) : (T|null) {
+    return genTab[1] ?? null;
 }
+
+//pierre tips :
+//o?.age?.toString()
 
 export default function ex6() {
     console.log(getSecond(bingo));
