@@ -1,6 +1,5 @@
 
-// Faire une fonction generique, qui prend en entree n'importe quel tableau et 
-// qui renvoi le second element ou null si non existant
+
 
 
 
@@ -11,6 +10,8 @@ const computerUnit : string[] = ['o', 'Ko', 'Mo', 'Go', 'To', 'Po'];
 const empty :any[] = [];
 
 
+// Faire une fonction generique, qui prend en entree n'importe quel tableau et
+// qui renvoi le second element ou null si non existant
 function getSecond<T>(genTab : T[]) : (T|null) {
     return genTab[1] ?? null;
 }

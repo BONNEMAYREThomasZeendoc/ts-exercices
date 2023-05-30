@@ -44,6 +44,12 @@ function briefDescription(user: singleUser): string {
     }
     return res;
 }
+function briefDescription_opti(user: singleUser): string {
+    const res1 = `${user.firstName} ${user.lastName.toUpperCase()}`;
+    const res2 = user.age !== undefined ? ` ${user.age}` : '';
+    return res1 + res2;
+}
+
 
 export default function ex2() {
     Object.values(users).forEach(user => console.log(briefDescription(user)))
