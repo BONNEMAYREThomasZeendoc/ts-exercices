@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-import ex1 from '../exercices/ex2';
-import ex2 from '../exercices/ex1';
+import ex1 from '../exercices/ex1';
+import ex2 from '../exercices/ex2';
 import ex3 from '../exercices/ex3';
 import ex4 from '../exercices/ex4';
 import ex5 from '../exercices/ex5';

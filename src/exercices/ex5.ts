@@ -1,10 +1,10 @@
 
 
 const sayHelloTo = (name : string) => console.log(`Hello ${name} !`);
-const users = ['John', 'Walter', 'Bob'];
+const users : string[] = ['John', 'Walter', 'Bob'];
 
 // Typer correctement les entrees de cette fonction
-function helloToEverybody(users : any, callback : any) : void {
+function helloToEverybody(users : string[], callback : (p : string)=>void) : void {
     users.forEach(callback);
 }
 

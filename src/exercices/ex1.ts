@@ -1,6 +1,30 @@
 // Typer les objets suivants
+interface Address {
+    city: string;
+    country: string;
+}
 
-const user = {
+interface Item {
+    id: number;
+    quantity: number;
+}
+
+interface Order {
+    item: Item[];
+    shippingAddress: Address;
+    paymentAddress: Address;
+}
+
+interface User {
+    firstName: string;
+    lastName: string;
+    accountChecked: boolean;
+    address: Address;
+    orders: Order[];
+}
+
+
+const user : User = {
     firstName: "Beverly",
     lastName: "Davis",
     accountChecked: false,
